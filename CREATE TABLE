@@ -1,0 +1,15 @@
+CREATE TABLE ADDRESS(
+	ADDRESS_ID  VARCHAR(20) PRIMARY KEY,
+	STREET      VARCHAR(200),
+	CITY        VARCHAR(200),
+	STATE       VARCHAR(100),
+	COUNTRY     VARCHAR(100)
+);
+INSERT INTO ADDRESS
+VALUES
+    ('ADDR001', '123 Main Street', 'New York', 'New York', 'USA'),
+    ('ADDR002', '456 Park Avenue', 'Los Angeles', 'California', 'USA'),
+    ('ADDR003', '789 Oak Road', 'Chicago', 'Illinois', 'USA'),
+    ('ADDR004', '101 Elm Street', 'London', NULL, 'United Kingdom'),
+    ('ADDR005', '456 Maple Avenue', 'Toronto', 'Ontario', 'Canada');
+SELECT * FROM ADDRESS;
