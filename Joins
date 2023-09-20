@@ -1,0 +1,15 @@
+There are two ways to write SELECT queries:
+
+Using JOIN keyword between tables in FROM clause.
+
+SELECT  T1.COLUMN1 AS C1, T1.COLUMN2 C2, T2.COLUMN3 AS C3
+FROM  TABLE1    T1
+JOIN  TABLE2 AS T2 ON T1.C1 = T2.C1 AND T1.C2 = T2.C2;
+
+
+Using comma (,) between tables in FROM clause.
+
+SELECT  T1.COLUMN1 AS C1, T1.COLUMN2 AS C2, T2.COLUMN3 C3 
+FROM  TABLE1 AS T1, TABLE2 AS T2
+WHERE  T1.C1 = T2.C1
+AND  T1.C2 = T2.C2;
