@@ -1,0 +1,20 @@
+SELECT * FROM SCHOOL; -- Table contains school name and other school details.
+
+SELECT * FROM SUBJECTS; -- Contains all subjects thought in this school.
+
+SELECT * FROM STAFF; -- All teaching and non teaching staff details are present here.
+
+SELECT * FROM STAFF_SALARY; -- Staff salary can be found in this table.
+
+SELECT * FROM CLASSES; -- Total classes in the school (from Grade 1 to Grade 10) along with subjects thought in each class and the teachers teaching these subjects.
+
+SELECT * FROM STUDENTS; -- Student details including their name, age, gender etc.
+
+SELECT * FROM PARENTS; -- Parents details including their name, address etc.
+
+SELECT * FROM STUDENT_CLASSES; -- Students present in each class (or grade).
+
+SELECT * FROM STUDENT_PARENT; -- Parent of each student can be found here.
+
+SELECT * FROM ADDRESS; -- Address of all staff and students.
+
