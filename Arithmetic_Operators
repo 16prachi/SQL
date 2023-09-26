@@ -1,0 +1,17 @@
+-- Arithmetic Operators
+
+SELECT (5+2) AS ADDITION;   -- Sum of two numbers. PostgreSQL does not need FROM clause to execute such queries.
+
+SELECT (5-2) AS SUBTRACT;   -- Oracle & MySQL equivalent query would be -->  select (5+2) as Addition FROM DUAL; --> Where dual is a dummy table.
+
+SELECT (5*2) AS MULTIPLY;
+
+SELECT (5/2) AS DIVIDE;   -- Divides 2 numbers and returns whole number.
+
+SELECT (5%2) AS MODULUS;  -- Divides 2 numbers and returns the remainder
+
+SELECT STAFF_TYPE FROM STAFF ; -- Returns lot of duplicate data.
+
+SELECT DISTINCT STAFF_TYPE FROM STAFF ; -- Returns unique values only.
+
+SELECT STAFF_TYPE FROM STAFF LIMIT 5; -- Fetches only the first 5 records from the result.
