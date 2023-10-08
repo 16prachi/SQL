@@ -1,0 +1,13 @@
+-- Inner Join: 21 records returned – Inner join always fetches only the matching records present in both right and left table.
+
+-- Inner Join can be represented as eithe "JOIN" or as "INNER JOIN". Both are correct and mean the same.
+
+SELECT COUNT(1)
+FROM STAFF STF
+JOIN STAFF_SALARY SS ON SS.STAFF_ID = STF.STAFF_ID
+ORDER BY 1;
+SELECT DISTINCT (STF.FIRST_NAME||' '||STF.LAST_NAME) AS FULL_NAME, SS.SALARY
+FROM STAFF STF
+JOIN STAFF_SALARY SS ON SS.STAFF_ID = STF.STAFF_ID
+ORDER BY 2;
+
