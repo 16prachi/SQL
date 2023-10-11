@@ -1,0 +1,12 @@
+-- 24 records – 24 records in right table.
+
+-- All records from RIGHT table with be fetched irrespective of whether there is matching record in the LEFT table.
+
+SELECT COUNT(1)
+FROM STAFF STF
+RIGHT JOIN STAFF_SALARY SS ON SS.STAFF_ID = STF.STAFF_ID
+ORDER BY 1;
+SELECT DISTINCT (STF.FIRST_NAME||' '||STF.LAST_NAME) AS FULL_NAME, SS.SALARY
+FROM STAFF STF
+RIGHT JOIN STAFF_SALARY SS ON SS.STAFF_ID = STF.STAFF_ID
+ORDER BY 1;
