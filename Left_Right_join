@@ -1,0 +1,12 @@
+-- 26 records – all records from both tables. 21 matching records + 2 records from left + 3 from right table.
+
+-- All records from both LEFT and RIGHT table with be fetched irrespective of whether there is matching record in both these tables.
+
+SELECT COUNT(1)
+FROM STAFF STF
+FULL OUTER JOIN STAFF_SALARY SS ON SS.STAFF_ID = STF.STAFF_ID
+ORDER BY 1;
+SELECT DISTINCT (STF.FIRST_NAME||' '||STF.LAST_NAME) AS FULL_NAME, SS.SALARY
+FROM STAFF STF
+FULL OUTER JOIN STAFF_SALARY SS ON SS.STAFF_ID = STF.STAFF_ID
+ORDER BY 1,2;
